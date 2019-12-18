@@ -10,7 +10,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/api/burger', (req, res) => {
-    console.log(req.body.name)
     burger.insert(req.body.name, (data) => {
         res.render('index', { burger: data })
     })
