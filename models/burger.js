@@ -12,7 +12,7 @@ const burger = {
         })
     },
     update: (id, cb) => {
-        orm.selectAll('burgers', id, (res) => {
+        orm.updateOne('burgers', id, (res) => {
             cb(res)
         })
     }
