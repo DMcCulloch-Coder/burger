@@ -10,7 +10,7 @@ const orm = {
         })
     },
     insertOne: (table, name, cb) => {
-        connection.query(`INSERT INTO ${table} (burger_name, devoured) VALUES (${name}, false)`, (err, result) => {
+        connection.query(`INSERT INTO ${table} (burger_name, devoured) VALUES ("${name}", false)`, (err, result) => {
             if (err) {
                 return console.log(`Error: ${err}`)
             }
