@@ -9,13 +9,14 @@ router.get('/', (req, res) => {
     })
 });
 
-router.post('/api/:burger', (req, res) => {
-    burger.insert(req.params.burger, (data) => {
+router.post('/api/burger', (req, res) => {
+    console.log(req.body.name)
+    burger.insert(req.body.name, (data) => {
         res.render('index', { burger: data })
     })
 });
 
-router.update('/api/:id', (req, res) => {
+router.put('/api/:id', (req, res) => {
     burger.update(req.params.id, (data) => {
         res.render('index', { burger: data })
     })
