@@ -19,7 +19,12 @@ body {
 
 .header {
     text-align: center;
+    margin: 1rem;
 
+}
+
+.burger_img {
+    height: 25rem;
 
 }
 
@@ -27,3 +32,12 @@ body {
     text-align: center;
 
 }
+
+.uneaten-burgers {
+    margin: 1rem; 
+}
+
+.eaten-burgers {
+    margin: 1rem;
+}
+

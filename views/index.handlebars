@@ -1,5 +1,22 @@
-{{#each burger}}
-    <p>ID: {{id}}</p>
-    <p>Burger Name: {{burger_name}}</p>
-    <p>Devoured?: {{devoured}}</p>
-{{/each}}
+<div class="uneaten-burgers">
+    <h3>Uneaten Burgers:</h3>
+    {{#each burger}}
+        {{#unless devoured}}
+            <p>
+                {{id}}- {{burger_name}} 
+                <button>Eat!</button>
+            </p>
+        {{/unless}}
+    {{/each}}
+</div>
+
+<div class="eaten-burgers">
+    <h3>Eaten Burgers:</h3>
+    {{#each burger}}
+        {{#if devoured}}
+            <p>
+                {{id}}- {{burger_name}}
+            </p>
+        {{/if}}
+    {{/each}}
+</div>
