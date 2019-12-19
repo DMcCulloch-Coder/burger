@@ -19,11 +19,35 @@ body {
 
 .header {
     text-align: center;
+    margin: 1rem;
 
+}
+
+.burger_img {
+    height: 25rem;
 
 }
 
 .main {
+    width: 50%;
     text-align: center;
+    margin: 0 auto;
 
 }
+
+.uneaten-burgers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    margin: 1rem; 
+}
+
+.eaten-burgers {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    margin: 1rem;
+}
+
