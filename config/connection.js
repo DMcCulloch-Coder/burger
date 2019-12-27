@@ -11,13 +11,13 @@ if (process.env.JAWSDB_URL) {
         password: "root",
         database: "burger_db"
     })
-}
+};
 
 connection.connect((e) => {
     if (e) {
         return console.log(`Connection Error: ${e.stack}`)
     }
     console.log(`Connected to db as id ${connection.threadId}`)
-})
+});
 
 module.exports = connection;
